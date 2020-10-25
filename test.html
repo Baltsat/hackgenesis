@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="Simple django applications (templates) for some projects">
+    <meta name="keywords" content="Django,Applications">
+    <meta name="author" content="dormantman, dormantman@ya.ru">
+    <meta name="reply-to" content="dormantman@ya.ru">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#282c34">
+    <meta name="theme-color" content="#282c34">
+
+    <meta name="og:title" content="Django Applications"/>
+    <meta name="og:type" content="software"/>
+    <meta name="og:image" content="{% static 'favicon.png' %}"/>
+    <meta name="og:site_name" content="Django Applications"/>
+    <meta name="og:description" content="Simple django applications (templates) for some projects"/>
+
+    <meta name="og:email" content="dormantman@ya.ru"/>
+    <meta name="og:phone_number" content="+7 (919) 033 41-35"/>
+
+    <link rel="apple-touch-icon" type="image/png" href="/static/favicon.png">
+    <link rel="icon" type="image/png" href="/static/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.png">
+
+    <title>БКС Мир инвестиций</title>
+
+    <link rel="stylesheet" type="text/css" href="test.css"/>
+    <script src="test.js"></script>
+    <link rel="stylesheet" href="https://jackonthe.net/wp-content/cache/minify/7407b.css" media="all">
+</head>
+<body>
+
+<div class="header-container">
+    <div class="header">
+        <div class="logo">
+            БКС <br class="divider"/> Мир инвестиций
+        </div>
+        <div class="tags">
+            <a class="tag" href="/trade">Торговля</a>
+            <a class="tag" href="/investment">Инвестиции</a>
+            <a class="tag" href="/training">Обучение и идеи</a>
+            <a class="tag" href="/professionals">Профессионалам</a>
+            <a class="tag" href="/premium">Премиум</a>
+            <a class="tag" href="/bank">Банк</a>
+            <a class="tag" href="/about">Еще</a>
+        </div>
+        <div class="auth">
+            <div class="button">Войти</div>
+            <div class="button client">Стать клиентом</div>
+        </div>
+    </div>
+</div>
+
+<div class="body-container">
+    <div class="chats">
+        <div class="chat">
+            <div class="chat-info">
+                <div class="avatar-container">
+                    <img class="avatar" src="https://sun9-58.userapi.com/impf/3rlKgV7eZgd9XkYCuAp5q7sQJZOoUcSDn5oxFA/99fAAcjXveY.jpg?size=0x0&amp;quality=90&amp;proxy=1&amp;sign=908c4a8c35219962471354a4e9c2c88a" alt="">
+                </div>
+                <div class="body">
+                    <div class="title">
+                        <div class="name">БКС</div>
+                    </div>
+                    <div class="entry">
+                        <div class="status">Мир инвестиций</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="messages" class="messages">
+        <div class="controls-container">
+            <div class="back-button icon-button" onclick="window.location.href = '/chats/'">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.207 2.793a1 1 0 0 1 0 1.414L8.414 12l7.793 7.793a1 1 0 0 1-1.414 1.414l-8.5-8.5a1 1 0 0 1 0-1.414l8.5-8.5a1 1 0 0 1 1.414 0z"
+                          fill="#000"></path>
+                </svg>
+            </div>
+            <div class="chat-info">
+                <div class="avatar-container">
+                    <img class="avatar"
+                         src="https://sun9-58.userapi.com/impf/3rlKgV7eZgd9XkYCuAp5q7sQJZOoUcSDn5oxFA/99fAAcjXveY.jpg?size=0x0&quality=90&proxy=1&sign=908c4a8c35219962471354a4e9c2c88a"
+                         alt="">
+                </div>
+                <div class="body">
+                    <div class="title">
+                        <div class="name">БКС Мир инвестиций</div>
+                    </div>
+                    <div class="entry">
+                        <div class="status">online</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-button icon-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#a)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M12 7.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm2 4.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm0 6.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"
+                              fill="#000"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="a">
+                            <path fill="#fff" d="M0 0h24v24H0z"></path>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        <div class="messages-container">
+            <div class="load-last-messages" style="display: none">
+                <div class="icon-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#a)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M20.5 1.5a1 1 0 0 1 1 1V8a1 1 0 0 1-1 1h-5.25a1 1 0 1 1 0-2h2.996a8.003 8.003 0 0 0-14.047 3.221 1 1 0 0 1-1.951-.442C3.258 5.325 7.24 2 12 2a9.976 9.976 0 0 1 7.5 3.386V2.5a1 1 0 0 1 1-1zm.498 11.525a1 1 0 0 1 .754 1.196C20.742 18.675 16.76 22 12 22a9.976 9.976 0 0 1-7.5-3.386V21.5a1 1 0 1 1-2 0V16a1 1 0 0 1 1-1h5.25a1 1 0 1 1 0 2H5.754a8.004 8.004 0 0 0 14.047-3.221 1 1 0 0 1 1.197-.754z"
+                                  fill="#000"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="a">
+                                <path d="M0 0h24v24H0V0z" fill="#fff"></path>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="loader"></div>
+        </div>
+        <div class="input-container">
+            <div class="attach-file icon-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M3.868 8.11l6.01-6.01c2.558-2.557 6.374-2.111 8.486 0 2.111 2.112 2.557 5.929 0 8.486l-6.01 6.01c-1.497 1.497-3.723 1.228-4.95 0-1.228-1.228-1.497-3.453 0-4.95l3.889-3.889a1 1 0 1 1 1.414 1.415L8.818 13.06c-.625.625-.54 1.58 0 2.121.54.54 1.496.625 2.121 0l6.01-6.01c1.686-1.686 1.425-4.233 0-5.657-1.423-1.424-3.97-1.686-5.656 0l-6.01 6.01c-2.761 2.76-2.47 6.723 0 9.193 2.469 2.469 6.431 2.76 9.192 0l3.889-3.89a1 1 0 0 1 1.414 1.415l-3.889 3.889c-3.603 3.603-8.833 3.187-12.02 0-3.188-3.188-3.604-8.418 0-12.021z"
+                          fill="#000"></path>
+                </svg>
+            </div>
+            <div class="message-input">
+                <div id="message" class="message-input-element"
+                     contenteditable="true" data-text="Напишите сообщение..."></div>
+            </div>
+            <div class="message-send icon-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5.975 1.701l.032.018 15.744 8.723c.18.1.37.205.52.307.153.104.412.298.563.631a1.5 1.5 0 0 1 0 1.24c-.15.333-.41.527-.562.63-.15.103-.34.209-.521.308l-15.776 8.74c-.214.12-.43.24-.616.321-.173.077-.515.215-.916.143a1.5 1.5 0 0 1-1.064-.783c-.188-.36-.158-.728-.137-.916.023-.201.073-.444.122-.684l.84-4.077.029-.142c.177-.864.31-1.516.632-2.075a4 4 0 0 1 1.126-1.25c.514-.373 1.138-.574 1.96-.835-.822-.261-1.446-.462-1.96-.834a4 4 0 0 1-1.126-1.251c-.321-.56-.455-1.211-.632-2.076l-.03-.141-.832-4.042-.007-.035c-.05-.24-.1-.483-.122-.684-.021-.188-.051-.556.137-.916a1.5 1.5 0 0 1 1.064-.783c.4-.072.743.066.916.143.186.081.402.201.616.32zM5.418 3.68l.745 3.616c.22 1.07.296 1.38.436 1.624a2 2 0 0 0 .563.626c.23.165.53.273 1.57.604l2.821.898a1 1 0 0 1 0 1.906l-2.82.898c-1.041.33-1.342.439-1.57.604a2 2 0 0 0-.564.626c-.14.245-.216.555-.436 1.624l-.745 3.616L20.437 12 5.418 3.679z"
+                          fill="#000"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const CHAT_ID = parseInt("1");
+    const USER_ID = parseInt("1");
+    const CSRF = "TOKEN";
+
+    const options = {
+        updateDelay: 2000
+    };
+    const chat = new Chat(options);
+    chat.init();
+</script>
+<script src="https://jackonthe.net/wp-content/cache/minify/58363.js"></script>
+</body>
+</html>
